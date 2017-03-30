@@ -28,7 +28,7 @@ __END__
   Env::C::unsetenv($key);
   
   my $ar_env = Env::C::getallenv();
-  print join "\n", @$ar_env;
+  print "$_\n" for @$ar_env;
 
 =head1 DESCRIPTION
 
